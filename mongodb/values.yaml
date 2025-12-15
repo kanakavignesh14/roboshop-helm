@@ -1,0 +1,6 @@
+deployment:
+   replicas: 1
+   imageRepo: kanakavignesh/mongodb
+   imageVersion: v1
+service:
+   type: ClusterIp   

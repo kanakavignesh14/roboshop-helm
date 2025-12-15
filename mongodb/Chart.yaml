@@ -1,0 +1,5 @@
+apiVersion: v2
+name: mongodb # chart name
+version:  1.0.0 # chart version
+description: first_version #upgrading to stable-perl version
+appVersion: v1 #stable-perl # this is application version

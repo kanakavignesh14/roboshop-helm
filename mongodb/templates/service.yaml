@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata: 
+   name: mongodb  # service name
+
+spec:
+  type: {{ .Values.service.type}}
+  selector:
+      project: roboshop
+      component: mongodb          # this same selector will thtat pod labels also have
+      tier: db
+  ports:
+     - protocol: TCP
+       port: 27017 # sevice port
+       targetPort: 27017 # container port   forwart req to another container
